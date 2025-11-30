@@ -8,6 +8,7 @@
 	
 	NOTE 1: Make sure to create manifest.xml file for getting modern OS versions above 6th.
 	Project -> Properties -> Manifest Tool -> Input And Output -> Additional Manifest Files: manifest.xml
+	Add #define BUILD_WINDOWS in source code to get correct windows version when using GetVersionExW()
 
 	NOTE 2: For GetComputerObjectNameW function 1) include <security.h> header file and 
 	2) add Secur32.lib to Additional Dependencies:
@@ -16,7 +17,7 @@
 */
 
 #define SECURITY_WIN32
-#define BUILD_WINDOWS
+#define BUILD_WINDOWS  //to get correct windows version when using GetVersionExW()
 #include <Windows.h>
 #include <security.h>
 #include <stdio.h>
@@ -118,10 +119,10 @@ int main(int argc, const char* argv[]) {
 		printf("System directory: %ws\n", infoBuf);
 	}
 
-	OSVERSIONINFOEXW vi = { sizeof(vi) };
-	::GetVersionExW((LPOSVERSIONINFOW)&vi);
+	OSVERSIONINFOW vi = { sizeof(vi) };
+	::GetVersionExW(&vi);
 	DWORD productType;
-	if (::GetProductInfo(vi.dwMajorVersion, vi.dwMinorVersion, vi.wServicePackMajor, vi.wServicePackMinor, &productType)) {
+	if (::GetProductInfo(vi.dwMajorVersion, vi.dwMinorVersion, 0, 0, &productType)) {
 		wprintf(L"%ws, ", GetWindowsVersion(&productType));
 		printf("version: %lu.%lu.%lu\n", vi.dwMajorVersion, vi.dwMinorVersion, vi.dwBuildNumber);
 	}
