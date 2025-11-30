@@ -17,7 +17,7 @@
 */
 
 #define SECURITY_WIN32
-#define BUILD_WINDOWS  //to get correct windows version when using GetVersionExW()
+#define BUILD_WINDOWS
 #include <Windows.h>
 #include <security.h>
 #include <stdio.h>
