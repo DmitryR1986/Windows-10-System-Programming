@@ -1,5 +1,6 @@
 Exercise 1  from "Windows 10 System Programming" (by Pavel Yosifovich), Chapter 1:
 
+TASK:
 "Write a console application that prints more information about the system than the
 HelloWin application shown earlier, by calling the following APIs:
 GetNativeSystemInfo, GetComputerName, GetWindowsDirectory, QueryPerformanceCounter,
