@@ -11,12 +11,12 @@ Write a console application that prints system information by calling the follow
 - 'GetComputerObjectNameW'
 
 
-## BEFORE BUILD:
+## BUILD:
 
 ### NOTE 1: GetVersionExW function
 Make sure to create manifest.xml file for getting modern OS versions above 6th.
-Project -> Properties -> Manifest Tool -> Input And Output -> Additional Manifest Files: manifest.xml
-Add #define BUILD_WINDOWS in source code to get correct windows version when using GetVersionExW()
+**Project -> Properties -> Manifest Tool -> Input And Output -> Additional Manifest Files: manifest.xml
+#define BUILD_WINDOWS in source code is to get correct windows version when using GetVersionExW()
 
 ### NOTE 2: GetComputerObjectNameW function 
 1) include <security.h> header file and
