@@ -1,5 +1,10 @@
 /*	
 	Exercise 1  from "Windows 10 System Programming" (by Pavel Yosifovich), Chapter 1
+
+	Implements a console application that displays system information using various Windows API functions.
+
+	Author: Dmitry Reshetnikov
+	December 2025
 */
 
 #define SECURITY_WIN32  //for GetComputerObjectNameW function 
@@ -46,7 +51,7 @@ int main(int argc, const char* argv[]) {
 
 	SYSTEM_INFO si;
 	::GetNativeSystemInfo(&si);
-
+	
 	printf("Processor Type: %lu\n", si.dwProcessorType);
 	printf("Number of Logical Processors: %d\n", si.dwNumberOfProcessors);
 	printf("Page size: %d Bytes\n", si.dwPageSize);
