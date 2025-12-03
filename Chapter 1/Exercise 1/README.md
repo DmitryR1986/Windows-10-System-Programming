@@ -8,9 +8,8 @@ Write a console application that prints system information by calling the follow
 - 'QueryPerformanceCounter'
 - 'GetProductInfo'
 - 'GetComputerObjectName'
-Handle errors if they occur."
 
-## === BEFORE BUILD ===
+## BEFORE BUILD:
 
 ### NOTE 1: GetVersionExW function
 Make sure to create manifest.xml file for getting modern OS versions above 6th.
