@@ -14,7 +14,7 @@ Write a console application that prints system information by calling the follow
 ## BUILD:
 
 ### NOTE 1: GetVersionExW function
-Make sure to create manifest.xml file for getting modern OS versions above 6th.
+Make sure to add manifest.xml file for getting modern OS versions above 6th.
 #### Project -> Properties -> Manifest Tool -> Input And Output -> Additional Manifest Files: manifest.xml
 Also '#define BUILD_WINDOWS' is already included in source code.
 
