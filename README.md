@@ -7,7 +7,7 @@ Here I post my solutions to  tasks from the book
 - Practical study of Windows system programming.
 - creating a Portfolio with examples of working with system calls, Win API.
 
-# Project Structure:
+## Project Structure:
 This project is split in chapters.
 Each chapter has README section and 'src' folder with exercices.
 Code was tested in Windows 10 using Visual Studio 2022.
