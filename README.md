@@ -11,7 +11,7 @@ Here I post my solutions to  tasks from the book
 This project is split in chapters.
 Each chapter has README section and 'src' folder with exercices.
 
-### Development environment:
+## Development environment:
 Code was tested in Windows 10 and Visual Studio 2022.
 
 ## Contents by chapters:
