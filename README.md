@@ -10,7 +10,9 @@ Here I post my solutions to  tasks from the book
 ## Project Structure:
 This project is split in chapters.
 Each chapter has README section and 'src' folder with exercices.
-Code was tested in Windows 10 using Visual Studio 2022.
+
+### Development environment:
+Code was tested in Windows 10 and Visual Studio 2022.
 
 ## Contents by chapters:
 - Chapter 1 describes basic Windows system information and how to get it using Windows API.
