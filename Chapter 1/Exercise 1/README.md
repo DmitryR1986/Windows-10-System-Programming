@@ -7,7 +7,9 @@ Write a console application that prints system information by calling the follow
 - 'GetWindowsDirectory'
 - 'QueryPerformanceCounter'
 - 'GetProductInfo'
-- 'GetComputerObjectName'
+- 'GetVersionExW'
+- 'GetComputerObjectNameW'
+
 
 ## BEFORE BUILD:
 
