@@ -12,7 +12,7 @@ Write a console application that prints system information by calling the follow
 
 
 ## BUILD:
-
+To make these 2 functions work following steps must be done.
 ### NOTE 1: GetVersionExW function
 Make sure to add manifest.xml file for getting modern OS versions above 6th.
 #### Project -> Properties -> Manifest Tool -> Input And Output -> Additional Manifest Files: manifest.xml
