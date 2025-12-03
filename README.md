@@ -1,7 +1,7 @@
 # Windows-10-System-Programming
 
 Here I post my solutions to  tasks from the book
-"Windows 10 System Programming" (by P.Yosifovich).
+"Windows 10 System Programming" (by Pavel Yosifovich).
 
 ## Goal of the Project:
 - Practical study of Windows system programming.
