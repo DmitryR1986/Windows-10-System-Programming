@@ -14,36 +14,8 @@
 #include <stdio.h>
 #include <iostream>
 
-void ErrorCodeAndMeaning(DWORD* lastError) {
-	PWSTR errorMeaning;
-	DWORD chars = ::FormatMessageW(FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS,
-		nullptr, *lastError, 0, (PWSTR)&errorMeaning, 0, nullptr);
-	if (chars > 0) {
-		printf("Error %lu: %ws\n", *lastError, errorMeaning);
-		::LocalFree(errorMeaning);
-	}
-}
-
-PCWSTR GetWindowsVersion(DWORD* productType)
-{
-	switch (*productType) {
-	case PRODUCT_HOME_BASIC:
-		return L"Windows Home";
-		break;
-	case PRODUCT_PROFESSIONAL:
-		return L"Windows Professional";
-		break;
-	case PRODUCT_ENTERPRISE:
-		return L"Windows Enterprise";
-		break;
-	case PRODUCT_EDUCATION:
-		return L"Windows Education";
-		break;
-	default:
-		return L"Unknown product type";
-		break;
-	}
-}
+void ErrorCodeAndMeaning(DWORD* lastError);
+PCWSTR GetWindowsVersion(DWORD* productType);
 
 
 int main(int argc, const char* argv[]) {
@@ -134,4 +106,36 @@ int main(int argc, const char* argv[]) {
 
 
 	return 0;
+}
+
+
+void ErrorCodeAndMeaning(DWORD* lastError) {
+	PWSTR errorMeaning;
+	DWORD chars = ::FormatMessageW(FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS,
+		nullptr, *lastError, 0, (PWSTR)&errorMeaning, 0, nullptr);
+	if (chars > 0) {
+		printf("Error %lu: %ws\n", *lastError, errorMeaning);
+		::LocalFree(errorMeaning);
+	}
+}
+
+PCWSTR GetWindowsVersion(DWORD* productType)
+{
+	switch (*productType) {
+	case PRODUCT_HOME_BASIC:
+		return L"Windows Home";
+		break;
+	case PRODUCT_PROFESSIONAL:
+		return L"Windows Professional";
+		break;
+	case PRODUCT_ENTERPRISE:
+		return L"Windows Enterprise";
+		break;
+	case PRODUCT_EDUCATION:
+		return L"Windows Education";
+		break;
+	default:
+		return L"Unknown product type";
+		break;
+	}
 }
