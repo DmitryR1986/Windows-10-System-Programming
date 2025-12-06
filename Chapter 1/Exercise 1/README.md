@@ -22,3 +22,7 @@ Also '#define BUILD_WINDOWS' is already included in source code.
 1) add Secur32.lib to Additional Dependencies:
 #### Project -> Properties -> Linker --> Input --> Additional Dependencies: Secur32.lib
 2) <security.h> and '#define SECURITY_WIN32' are also included in source code.
+
+### NOTE 3: for 'GetUserNameW' function 
+1) add Advapi32.lib to Additional Dependencies:
+#### Project -> Properties -> Linker --> Input --> Additional Dependencies: Advapi32.lib
