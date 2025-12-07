@@ -24,7 +24,7 @@ Full error: "[--YourProjectName--].vcxproj(231,5): error : This project referenc
    Select WTL packages and Microsoft.Windows.ImplementationLibrary and install latest versions.
   2. Right click on Project --> 'Unload Project'
   3. Right click on Project --> 'Edit Project File' (.vcxproj)
-     - Find "<Import Project="..\packages\wtl.10.0.9163\build\native\wtl.targets" and  "" <Error Condition="!Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets"  and delete these lines. Same for Microsoft.Windows.ImplementationLibrary package.
+     - Find old packages: "<Import Project="..\packages\wtl.10.0.9163\build\native\wtl.targets" and  "" <Error Condition="!Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets"  and delete these lines. Same for old Microsoft.Windows.ImplementationLibrary package.
      - Save file.
   4. Right click on Project --> Reload Project and then Rebuild
   5. Inside solution folder in folder 'packages' delete old versions wtl and Microsoft.Windows.ImplementationLibrary packages.
