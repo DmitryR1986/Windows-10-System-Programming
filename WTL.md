@@ -7,7 +7,7 @@
 ### Step 2. Installation issues:
 - https://learn.microsoft.com/en-us/answers/questions/1321701/unable-to-install-wtl-10-with-visual-studio-2022
 - https://sourceforge.net/p/wtl/discussion/374433/thread/f00ccfa770/
-  In short Setup.js doesn't know about Visual Studio 2022. You have to manually add info about it. Link above shows how to do it.
+ In short: Setup.js doesn't know about Visual Studio 2022. You have to manually add info about it. Link above shows how to do it.
 
 ### Step 3. Add WTL include files to project:
 As ReadMe.html says:  "Please be sure to add the WTL\include directory to the list of include directories in VC++, so that the compiler can find them when you include them in your projects."
