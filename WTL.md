@@ -14,7 +14,7 @@ As ReadMe.html says:  "Please be sure to add the WTL\include directory to the li
 - Project -> Properties -> C/C++ -> General -> Additional Include Directories: WTL\include;
   In my case the location is C:\Dev\WTL\include;
 
-### Step 4. Fix nuget packages errors:
+### Step 4. Fix NuGet packages errors:
 I had build errors when tried to run ready book samples (https://github.com/zodiacon/Win10SysProgBookSamples) that use WTL.  
 The error looked like this: "The missing file is ..\..\packages\wtl.10.0.9163\build\native\wtl.targets."  
 
