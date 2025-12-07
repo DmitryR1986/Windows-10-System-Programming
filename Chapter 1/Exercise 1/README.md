@@ -9,6 +9,7 @@ Write a console application that prints system information by calling the follow
 - 'GetProductInfo'
 - 'GetVersionExW'
 - 'GetComputerObjectNameW'
+  and some more.
 
 
 ### Before Build:
