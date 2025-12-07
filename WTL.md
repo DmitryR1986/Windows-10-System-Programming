@@ -1,4 +1,4 @@
-### Here i will show how to install WTL properly and avoid possible errors, that i already encountered using Visual Studio 2022.
+### Here i will show how to install WTL properly and avoid possible errors, that i already encountered while using Visual Studio 2022.
 
 #### Step 1. WTL download:
 - https://sourceforge.net/projects/wtl/
