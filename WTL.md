@@ -19,10 +19,10 @@ I had build errors when tried to run ready book samples (https://github.com/zodi
 The error looked like this: "The missing file is ..\..\packages\wtl.10.0.9163\build\native\wtl.targets."  
 
   Solution to problem:  
-  1. Update nuget packages: Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution
+  1. Update nuget packages: Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution.
      WTL packages and possibly Microsoft.Windows.ImplementationLibrary
-  2. Right click on Project --> 'Unload Project'
-  3. Right click on Project --> 'Edit Project File' (.vcxproj)
+  3. Right click on Project --> 'Unload Project'
+  4. Right click on Project --> 'Edit Project File' (.vcxproj)
      - Find "<Import Project="..\packages\wtl.10.0.9163\build\native\wtl.targets" and  "" <Error Condition="!Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets"  and delete or substitute with new packages versions: ..\packages\wtl.10.0.9163..  --> ..\packages\wtl.10.0.10320..
  5. Save this file, Right click on Project --> Reload Project and then Rebuild
  6. Inside solution folder in folder packages delete old wtl packages
