@@ -12,7 +12,7 @@
 ### Step 3. Add WTL include files to project:
 As ReadMe.html says:  "Please be sure to add the WTL\include directory to the list of include directories in VC++, so that the compiler can find them when you include them in your projects."
 - Project -> Properties -> C/C++ -> General -> Additional Include Directories: WTL\include;
-In my case the location is C:\Dev\WTL\include;
+  In my case the location is C:\Dev\WTL\include;
 
 ### Step 4. Fix nuget packages errors:
 I had build errors when tried to run ready book samples (https://github.com/zodiacon/Win10SysProgBookSamples) that use WTL.  
