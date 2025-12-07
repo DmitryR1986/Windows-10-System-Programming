@@ -26,7 +26,8 @@ Full error: "[--YourProjectName--].vcxproj(231,5): error : This project referenc
   3. Right click on Project --> 'Edit Project File' (.vcxproj)
      - Find old packages: "<Import Project="..\packages\wtl.10.0.9163\build\native\wtl.targets" and  "" <Error Condition="!Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets"  and delete these lines. Same for old Microsoft.Windows.ImplementationLibrary package - it is next or previous line in .vcxproj.
      - Save file.
-       <img width="1336" height="753" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/f4bdde8d-c433-4a13-bc53-b925ef99331b" />
+       <img width="1336" height="753" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/03687293-f843-4d89-9017-acc46975b79e" />
+
 
   4. Right click on Project --> Reload Project and then Rebuild
   5. Inside solution folder in folder 'packages' delete old wtl and Microsoft.Windows.ImplementationLibrary package folders.
