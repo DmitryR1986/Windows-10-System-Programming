@@ -23,10 +23,10 @@ The error looked like this: "The missing file is ..\..\packages\wtl.10.0.9163\bu
      WTL packages and possibly Microsoft.Windows.ImplementationLibrary
   2. Right click on Project --> 'Unload Project'
   3. Right click on Project --> 'Edit Project File' (.vcxproj)  Find these lines with packages versions and delete old ones and leave the newest:
-delete this line---->  <Import Project="..\packages\wtl.10.0.9163\build\native\wtl.targets" Condition="Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets')" />
-                       <Import Project="..\packages\wtl.10.0.10320\build\native\wtl.targets" Condition="Exists('..\packages\wtl.10.0.10320\build\native\wtl.targets')" />
+delete this line----> " <Import Project="..\packages\wtl.10.0.9163\build\native\wtl.targets" Condition="Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets')" />
+                       <Import Project="..\packages\wtl.10.0.10320\build\native\wtl.targets" Condition="Exists('..\packages\wtl.10.0.10320\build\native\wtl.targets')" />"
                    ...
-delete this line---->  <Error Condition="!Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\wtl.10.0.9163\build\native\wtl.targets'))" />
-                       <Error Condition="!Exists('..\packages\wtl.10.0.10320\build\native\wtl.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\wtl.10.0.10320\build\native\wtl.targets'))" />`
+delete this line----> " <Error Condition="!Exists('..\packages\wtl.10.0.9163\build\native\wtl.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\wtl.10.0.9163\build\native\wtl.targets'))" />
+                       <Error Condition="!Exists('..\packages\wtl.10.0.10320\build\native\wtl.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\wtl.10.0.10320\build\native\wtl.targets'))" />"
  4. Save this file, Right click on Project --> Reload Project and then Rebuild
  5. Inside solution folder in folder packages delete old wtl packages
