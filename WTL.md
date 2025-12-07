@@ -17,6 +17,7 @@ As ReadMe.html says:  "Please be sure to add the WTL\include directory to the li
 ### Step 4. Fix NuGet packages errors:
 I had build errors when tried to run ready book samples (https://github.com/zodiacon/Win10SysProgBookSamples) that use WTL.  
 The error looked like this: "The missing file is ..\..\packages\wtl.10.0.9163\build\native\wtl.targets."  
+"[--YourProjectName--].vcxproj(231,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\..\packages\wtl.10.0.9163\build\native\wtl.targets."
 
   Solution to problem:  
   1. Update nuget packages: Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution.
