@@ -10,7 +10,7 @@ Here I post my solutions to  tasks from the book
 ## Project Structure:
 This project is split in chapters.
 Each chapter has README section and 'src' folder with exercices.
-**IMPORTANT: Pay attention to WTL section, where i explain how to install WTL and avoid errors that i encountered.
+- IMPORTANT: Pay attention to WTL section, where i explain how to install WTL and avoid errors that i encountered.
 
 ## Development environment:
 Code was tested in Windows 10 and Visual Studio 2022.
